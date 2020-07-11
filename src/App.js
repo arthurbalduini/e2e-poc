@@ -7,7 +7,7 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
-      <MyForm/>
+      <MyForm />
       <LabelChanger />
     </div>
   );
