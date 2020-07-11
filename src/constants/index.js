@@ -3,5 +3,8 @@ export const labelOptions = [
     "Salut!",
     "Oizinho!",
     "Ciao!",
-    "Hola!"
+    "Hola!",
+    "Hallo!",
+    "Salve!",
+    "Здраво"
 ]
