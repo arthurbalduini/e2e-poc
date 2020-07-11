@@ -1,0 +1,12 @@
+.label-changer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &--label {
+        margin: 20px;
+        font-size: 50px;
+    }
+}
