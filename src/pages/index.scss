@@ -1,0 +1,13 @@
+.my-form {
+    padding: 200px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input{
+        margin: 20px;
+        color: red($color: #000000);
+    }
+}
