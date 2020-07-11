@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "POC e2e",
+  "name": "POC for e2e tests",
   "icons": [
     {
       "src": "favicon.ico",
