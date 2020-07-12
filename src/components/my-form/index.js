@@ -1,16 +1,20 @@
 import './index.scss';
 
+import React, { useContext } from 'react';
+
 import Button from '../base/Button';
 import Input from '../base/Input'
-import React from 'react';
-import {useForm} from 'react-hook-form'
+import { emailContext } from '../../context/email'
+import { useForm } from 'react-hook-form'
 
 const MyForm = () => {
+
+    const test = useContext(emailContext)
 
     const {register, handleSubmit, errors} = useForm();
 
     const onSubmit = data => {
-        console.log(data);
+        console.log(test);
     }
 
     return(
