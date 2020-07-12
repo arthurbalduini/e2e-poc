@@ -1,6 +1,7 @@
 ## Simple project to setup e2e tests with cypress
 
-Feel free to feel bad for the code
+Feel free to feel bad for the code.
+This projects use react 16.13.1 version with hooks, contextAPI and a fake backend made with json-server.
 
 ## Run project
 
