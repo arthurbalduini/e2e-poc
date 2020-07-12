@@ -2,7 +2,7 @@
 
 Feel free to feel bad for the code.
 
-This projects uses react 16.13.1 version with hooks, contextAPI and a fake backend made with json-server.
+This projects uses react 16.13.1 version with hooks, contextAPI, end-to-end tests created with CypressIO and a fake backend created with json-server.
 
 ## Run project
 
