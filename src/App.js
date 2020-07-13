@@ -7,7 +7,7 @@ import React from 'react';
 
 function App() {
   return (
-    <EmailContextProvider value="teste">
+    <EmailContextProvider >
       <div className="App">
         <MyForm />
         <LabelChanger />
