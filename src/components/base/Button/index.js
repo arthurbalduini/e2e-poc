@@ -2,7 +2,7 @@ import './index.scss';
 
 import React from 'react';
 
-const Button = ({ type, label, onClick }) => (
+const Button = ({ type="button", label, onClick }) => (
     <button className="button-base" type={type} onClick={onClick} >
         {label}
     </button>
