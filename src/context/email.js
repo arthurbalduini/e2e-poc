@@ -1,11 +1,20 @@
-import React, { createContext } from 'react';
+import React, { createContext, useEffect, useMemo, useState } from 'react';
 
-export const emailContext = createContext({});
+import { getEmailData } from '../service';
 
-export default function EmailContextProvider({ children, value }) {
+export const EmailContext = createContext({});
+
+export default function EmailContextProvider({ children }) {
+
+    const [email, setEmail] = useState({});
+
+    useEffect(() => getEmailData(setEmail), []);
+
+    const providerValue = useMemo(() => ({ email }), [email])
+
     return(
-    <emailContext.Provider value={value}>
+    <EmailContext.Provider value={providerValue}>
         {children}
-    </emailContext.Provider>
+    </EmailContext.Provider>
     )
 }
