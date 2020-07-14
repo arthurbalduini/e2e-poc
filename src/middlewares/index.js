@@ -2,6 +2,9 @@ const { fetchEmailData } = require("../service")
 
 
 export const getEmailData = (setEmail) => fetchEmailData().then(res => {
-    const [nheco] = res;
-    setEmail(nheco.data.email)
+    //console.log(res);
+    const [nheco] = res.data;
+    const [blabla] = nheco.data;
+    console.log(blabla.data);
+    setEmail(blabla.data.email)
 })
