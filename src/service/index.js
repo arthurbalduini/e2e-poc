@@ -1,10 +1,10 @@
+import { httpClientWeb } from './conn-utils'
 
 const url = "http://localhost:3007/email"
 
 export const fetchEmailData = () => {
     try {
-        return fetch(url)
-            .then(response => response.json())
+        return httpClientWeb.get(url);
     } catch (e) {
       if (e) {
         console.log(e.message)
@@ -15,8 +15,10 @@ export const fetchEmailData = () => {
 export const postEmailData = data => {
 
     const postData = {
+      data: [{
         "id": 1,
         "data": data
+      }]
     }
 
     const putURL = `${url}/1`;

@@ -12,9 +12,9 @@ const WhatsMyEmailButton = () => {
     return(
         <div className="whats-my-email">
         <div className="whats-my-email--label">
-            {email && <label>{email}</label>}
+            {email && <label data-testid="email-label">{email}</label>}
         </div>
-            <Button type="button" label="Forgot your email?" onClick={() => getEmailData(setEmail)}  />
+            <Button type="button" label="Forgot your email?" onClick={() => getEmailData(setEmail)} dataTestID="email-button"/>
     </div>
     )
 }
