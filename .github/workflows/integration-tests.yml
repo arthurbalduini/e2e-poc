@@ -13,6 +13,3 @@ jobs:
           record: false
           start: npm start
           working-directory: ./
-        env:
-          # pass the Dashboard record key as an environment variable
-          CYPRESS_RECORD_KEY: e63a7946-58c1-48bf-9a6b-c0c832a5g137
