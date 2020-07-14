@@ -40,7 +40,7 @@ const MyForm = () => {
                             
                         <Input type="password" placeholder="Password" name="password" register={register} label="Password" />
                 
-                        <Button type="submit" label="Submit" dataTestID={'submit-button'} />
+                        <Button type="submit" label="Submit" dataTestID='submit-button' />
                 
                     </form>
             </div>
