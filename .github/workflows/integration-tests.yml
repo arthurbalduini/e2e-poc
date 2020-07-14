@@ -11,8 +11,8 @@ jobs:
         uses: cypress-io/github-action@v1
         with:
           record: false
-          start: cd ../../ && npm start
-          working-directory: frontend
+          start: npm start
+          working-directory: src
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: e63a7946-58c1-48bf-9a6b-c0c832a5g137
