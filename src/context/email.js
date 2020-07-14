@@ -13,8 +13,8 @@ export default function EmailContextProvider({ children }) {
     const providerValue = useMemo(() => ({ email }), [email])
 
     return(
-    <EmailContext.Provider value={providerValue}>
-        {children}
-    </EmailContext.Provider>
+        <EmailContext.Provider value={providerValue}>
+            {children}
+        </EmailContext.Provider>
     )
 }

@@ -18,7 +18,7 @@ const LabelChanger = () => {
             <div className="label-changer--label">
                 <label>{label}</label>
             </div>
-            <Button type="button" label="Click me!" onClick={onClick} />
+            <Button type="button" label="Click me!" onClick={onClick} dataTestID="label-changer-button"/>
         </div>
     )
 

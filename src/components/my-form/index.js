@@ -8,7 +8,7 @@ import Input from '../base/Input';
 import { postEmailData } from '../../service';
 import { useForm } from 'react-hook-form';
 
-const MyForm = () => {
+const MyForm = (value) => {
 
     const { register, handleSubmit, errors } = useForm({
         mode: 'onSubmit',
@@ -18,6 +18,7 @@ const MyForm = () => {
     });
     
     const onSubmit = data => {
+        console.log(value);
         postEmailData(data);
     }
 
@@ -39,7 +40,7 @@ const MyForm = () => {
                 {errors.email && <ErrorMessage msg='Este campo é obrigatório' />}
                 
                 <Input type="password" placeholder="Password" name="password" register={register} label="Password" />
-                <Button type="submit" label="Submit" />
+                <Button type="submit" label="Submit" dataTestID={'submit-button'} />
             </form>
         </div>
     )
