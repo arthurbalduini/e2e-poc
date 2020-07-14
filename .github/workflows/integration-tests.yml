@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-16.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
-      # https://github.com/cypress-io/github-action
+        uses: actions/checkout@v1 # https://github.com/cypress-io/github-action
+
       - name: Cypress run
         uses: cypress-io/github-action@v1
         with:
           record: false
-          start: npm start
+          start: npm run serve
           working-directory: ./
