@@ -1,11 +1,10 @@
 
 const url = "http://localhost:3007/email"
 
-export const getEmailData = setEmail => {
+export const fetchEmailData = () => {
     try {
-        fetch(url)
+        return fetch(url)
             .then(response => response.json())
-            .then(response => setEmail(JSON.stringify(response)));        
     } catch (e) {
       if (e) {
         console.log(e.message)

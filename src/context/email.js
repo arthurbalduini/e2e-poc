@@ -1,6 +1,4 @@
-import React, { createContext, useEffect, useMemo, useState } from 'react';
-
-import { getEmailData } from '../service';
+import React, { createContext, useMemo, useState } from 'react';
 
 export const EmailContext = createContext({});
 
@@ -8,9 +6,7 @@ export default function EmailContextProvider({ children }) {
 
     const [email, setEmail] = useState({});
 
-    useEffect(() => getEmailData(setEmail), []);
-
-    const providerValue = useMemo(() => ({ email }), [email])
+    const providerValue = useMemo(() => ({ email, setEmail }), [email, setEmail])
 
     return(
         <EmailContext.Provider value={providerValue}>
