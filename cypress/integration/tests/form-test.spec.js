@@ -9,7 +9,7 @@ context('Teste teste', () => {
     });
 
     it('Should show error message when trying to submit without filling the form', () => {
-      cy.getByTestID('email-input').type('francisco');
+      cy.getByTestID('email-input').type('testeste@das.com');
       cy.getByTestID('submit-button')
         .click();
       cy.getByTestID('error-message').should('be.visible');
