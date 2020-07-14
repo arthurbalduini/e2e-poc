@@ -4,7 +4,7 @@ const url = "http://localhost:3007/email"
 
 export const fetchEmailData = () => {
     try {
-        return httpClientWeb.get(url);
+        return httpClientWeb.get(url).then(res => res.data);
     } catch (e) {
       if (e) {
         console.log(e.message)
